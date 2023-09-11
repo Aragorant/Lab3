@@ -24,15 +24,15 @@ def process_file(config_file):
         word_count = 0
         sentence_count = 0
 
-        in_word = False
+        text_to_translate = ""
 
         for char in text:
+            if char_count < max_characters and word_count < max_words and sentence_count < max_sentences:
+                text_to_translate += char
+
             char_count += 1
 
             if char.isspace():
-                in_word = False
-            elif not in_word:
-                in_word = True
                 word_count += 1
 
             if char in ('.', '!', '?'):
@@ -47,38 +47,7 @@ def process_file(config_file):
     print("Кількість речень:", sentence_count)
     print("Мова тексту:", dp.LangDetect(text, "lang"))
 
-    with open(input_file, 'r', encoding='utf-8') as file:
-        char_count = 0
-        word_count = 0
-        sentence_count = 0
-
-        in_word = False
-
-        text = ""
-
-        while True:
-            char = file.read(1)
-
-            if not char:
-                break
-
-            char_count += 1
-
-            text += char
-
-            if char.isspace():
-                in_word = False
-            elif not in_word:
-                in_word = True
-                word_count += 1
-
-            if char in ('.', '!', '?'):
-                sentence_count += 1
-
-            if char_count >= max_characters or word_count >= max_words or sentence_count >= max_sentences:
-                break
-
-    translated_text = dp.TransLate(text, "auto", target_language)
+    translated_text = dp.TransLate(text_to_translate, "auto", target_language)
 
     if output_destination == 'screen':
         print(f"\nПереклад на мову {target_language}:")
@@ -97,5 +66,3 @@ def process_file(config_file):
 
 config_file = 'config.ini'
 process_file(config_file)
-
-

@@ -110,3 +110,26 @@ N	Language	ISO-639 code	Text
 108	slovenian	sl		Dober dan
 109	somali		so		Maalin wacan
 110	spanish		es		Buen día
+111	sundanese	su		Wilujeng siang
+112	swahili		sw		Siku njema
+113	swedish		sv		God dag
+114	tajik		tg		Рӯзи нағз
+115	tamil		ta		நல்ல நாள்
+116	tatar		tt		Яхшы көн
+117	telugu		te		మంచి రోజు
+118	thai		th		ขอให้เป็นวันที่ดี
+119	tigrinya	ti		ብሩኽ መዓልቲ
+120	tsonga		ts		Siku lerinene
+121	turkish		tr		İyi günler
+122	turkmen		tk		Günüňiz haýyrly
+123	twi		ak		Da pa
+124	ukrainian	uk		Добрий день
+125	urdu		ur		اچھا دن
+126	uyghur		ug		خەيرلىك كۈن
+127	uzbek		uz		Xayrli kun
+128	vietnamese	vi		ngày tốt
+129	welsh		cy		Diwrnod da
+130	xhosa		xh		Mholweni emini nje
+131	yiddish		yi		א גוטן טאג
+132	yoruba		yo		Ojo dada
+133	zulu		zu		Usuku oluhle
